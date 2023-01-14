@@ -7,17 +7,43 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 .container{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px ;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
+}
+/*----------------- header styles---------------- */
+.header{
+    height:94px;;
+    width:1440px;
+    display:flex;
+    background-color:  #562EFF;
+    justify-content: space-around;
+}
+.header>div{
+    display:flex;
+}
+.header nav{
+    display: flex;
+    gap:25px;
+    
+
+}
+.header nav a{
+    text-decoration: none;
+}
+.header nav li{
+    list-style: none;
 }
 /* -------------top player style---------------- */
 .top-players{
@@ -81,6 +107,33 @@ hr{
     text-decoration: none;
     font-size:16px;
     color:#562EFF;
-
 }
-
+/* --------------------Course Styles------------- */
+.courses{
+    display: flex;
+    gap:24px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-author{
+    color:#ED6B4F;
+    font-weight: 400;
+    font-size: 14.6913px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.course-duration{
+    color:#FF4A60;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+}
